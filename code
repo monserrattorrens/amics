@@ -2,7 +2,6 @@
 
 int main() {
     int nombre1, nombre2;
-
     int suma1 = 0, suma2 = 0;
 
     // Calcular la suma dels divisors propis de nombre1
