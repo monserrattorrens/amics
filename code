@@ -1,0 +1,29 @@
+#include <iostream>
+
+int main() {
+    int nombre1, nombre2;
+
+    int suma1 = 0, suma2 = 0;
+
+    // Calcular la suma dels divisors propis de nombre1
+    for (int i = 1; i <= nombre1 / 2; ++i) {
+        if (nombre1 % i == 0) {
+            suma1 += i;
+        }
+    }
+
+    // Calcular la suma dels divisors propis de nombre2
+    for (int i = 1; i <= nombre2 / 2; ++i) {
+        if (nombre2 % i == 0) {
+            suma2 += i;
+        }
+    }
+
+    // Determinar si són nombres amics
+    if (suma1 == nombre2 && suma2 == nombre1) {
+        printf("Són nombres amics");
+    } else {
+        printf("No són nombres amics");
+    }
+
+}
